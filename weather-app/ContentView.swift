@@ -9,33 +9,47 @@ import SwiftUI
 
 struct ContentView: View {
     var weatherInfoDummyDatum: [WeatherInfo] = WeatherInfo.dummyDatum()
+    @State var isNight: Bool = false
+    
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [.blue, .white]), startPoint: .topTrailing, endPoint: .bottomTrailing)
+            BackgroundView(isNight: $isNight)
             
-            VStack(spacing: 20){
+            VStack(spacing: 20) {
                 Text("서울")
                     .font(.system(size: 30))
                     .foregroundColor(.white)
                 
-                Image(systemName:"sun.max.fill")
+                Image(systemName: self.isNight ? "moon.stars.fill" : "sun.max.fill")
                     .resizable()
                     .renderingMode(.original)
-                    .frame(width: 150, height: 150)
+                    .frame(width: 120, height: 120)
                     .scaledToFit()
                 
-                Text("72°")
+                Text(self.isNight ? "5°" : "15°")
                     .font(.system(size: 60))
                     .foregroundColor(.white)
                 
                 Spacer()
                 
-                HStack {
+                HStack(spacing: 20) {
                     ForEach(weatherInfoDummyDatum) { WeatherInfo in
                         WeatherInfoView(weatherInfo: WeatherInfo)
                     }
                 }
                 
+                Spacer()
+                
+                Button {
+                    self.isNight.toggle()
+                } label: {
+                    Text(self.isNight ? "라이트모드 전환" : "다크모드 전환")
+                        .font(.system(size: 20))
+                        .padding(EdgeInsets(top: 15, leading: 25, bottom: 15, trailing: 25))
+                        .background(Color.white)
+                        .cornerRadius(20)
+                }
+
                 Spacer()
             }
             .padding()

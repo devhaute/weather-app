@@ -10,13 +10,11 @@ struct WeatherInfo: Identifiable {
 extension WeatherInfo {
     static func dummyDatum() -> [WeatherInfo] {
         return [
-            WeatherInfo(dayOfWeek: "월", weatherImageSystemName: "sun.max.fill", temperature: 15),
-            WeatherInfo(dayOfWeek: "화", weatherImageSystemName: "sun.max.fill", temperature: 15),
-            WeatherInfo(dayOfWeek: "수", weatherImageSystemName: "sun.max.fill", temperature: 15),
+            WeatherInfo(dayOfWeek: "월", weatherImageSystemName: "cloud.heavyrain.fill", temperature: 5),
+            WeatherInfo(dayOfWeek: "화", weatherImageSystemName: "cloud.fog.fill", temperature: 7),
+            WeatherInfo(dayOfWeek: "수", weatherImageSystemName: "cloud.sun.rain.fill", temperature: 10),
             WeatherInfo(dayOfWeek: "목", weatherImageSystemName: "sun.max.fill", temperature: 15),
-            WeatherInfo(dayOfWeek: "금", weatherImageSystemName: "sun.max.fill", temperature: 15),
-            WeatherInfo(dayOfWeek: "토", weatherImageSystemName: "sun.max.fill", temperature: 15),
-            WeatherInfo(dayOfWeek: "일", weatherImageSystemName: "sun.max.fill", temperature: 15)
+            WeatherInfo(dayOfWeek: "금", weatherImageSystemName: "sun.max.fill", temperature: 14)
         ]
     }
 }

@@ -13,6 +13,7 @@
 		B4BF78B2271815F2005F973F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4BF78B1271815F2005F973F /* Preview Assets.xcassets */; };
 		B4C1B4B427181CF100EE36E5 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C1B4B327181CF100EE36E5 /* WeatherInfo.swift */; };
 		B4C1B4B727181EE300EE36E5 /* WeatherInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C1B4B627181EE300EE36E5 /* WeatherInfoView.swift */; };
+		B4C1B4B92718217F00EE36E5 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C1B4B82718217F00EE36E5 /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		B4BF78B1271815F2005F973F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B4C1B4B327181CF100EE36E5 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
 		B4C1B4B627181EE300EE36E5 /* WeatherInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoView.swift; sourceTree = "<group>"; };
+		B4C1B4B82718217F00EE36E5 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				B4C1B4B527181EC400EE36E5 /* Entities */,
 				B4BF78AA271815F1005F973F /* weather_appApp.swift */,
 				B4BF78AC271815F1005F973F /* ContentView.swift */,
+				B4C1B4B82718217F00EE36E5 /* BackgroundView.swift */,
 				B4C1B4B627181EE300EE36E5 /* WeatherInfoView.swift */,
 				B4BF78AE271815F2005F973F /* Assets.xcassets */,
 				B4BF78B0271815F2005F973F /* Preview Content */,
@@ -151,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4C1B4B92718217F00EE36E5 /* BackgroundView.swift in Sources */,
 				B4BF78AD271815F1005F973F /* ContentView.swift in Sources */,
 				B4BF78AB271815F1005F973F /* weather_appApp.swift in Sources */,
 				B4C1B4B427181CF100EE36E5 /* WeatherInfo.swift in Sources */,
