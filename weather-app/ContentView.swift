@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    var weatherInfoDummyDatum: [WeatherInfo] = WeatherInfo.dummyDatum()
     @State var isNight: Bool = false
+    let weatherInfoDummyDatum: [WeatherInfo] = WeatherInfo.dummyDatum()
     
     var body: some View {
         ZStack {

@@ -2,6 +2,7 @@ import SwiftUI
 
 struct BackgroundView: View {
     @Binding var isNight: Bool
+
     private var topColor: Color {
         return self.isNight ? .black : .blue
     }
